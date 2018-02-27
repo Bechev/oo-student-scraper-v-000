@@ -6,6 +6,7 @@ class Student
 
   def initialize(student_hash)
     @name= student_hash[name].value
+    binding.pry
     @location = student_hash[name].value
     @twitter = student_hash[twitter].value
     @linkedin = student_hash[linkedin].value
