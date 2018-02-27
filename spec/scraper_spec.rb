@@ -47,3 +47,4 @@ describe "Scraper" do
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_david_hash)
     end
+end
