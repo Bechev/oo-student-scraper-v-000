@@ -40,8 +40,8 @@ class Scraper
         student_profile[:blog] = link
       end
     end
-    binding.pry
     student_profile[:profile_quote] = doc.css(".profile-quote").text if doc.css(".profile-quote")
+    binding.pry
     student_profile[:bio] = doc.css("div.bio-content.content-holder div.description-holder p").text if doc.css("div.bio-content.content-holder div.description-holder p")
     student
   end
