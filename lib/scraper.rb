@@ -44,5 +44,5 @@ class Scraper
     student_profile[:bio] = doc.css("div.bio-content.content-holder div.description-holder p").text if doc.css("div.bio-content.content-holder div.description-holder p")
     student
   end
-  
+
 end
