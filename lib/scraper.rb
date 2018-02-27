@@ -34,7 +34,6 @@ class Scraper
     profile_info[:github] = profile_vitals.css("a")[2]["href"]
     profile_info[:blog] = profile_vitals.css("a")[3]["href"]
     profile_info[:profile_quote] =  doc.css(".profile-quote").text
-    binding.pry
     progfile_info[:bio] = doc.css(".details-container").css(".bio-block").css(".bio-content").css(".description-holder").css("p").text
   end
 
