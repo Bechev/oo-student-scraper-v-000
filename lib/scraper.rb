@@ -40,7 +40,7 @@ class Scraper
         student_profile[:blog] = link
       end
     end
-    
+    student
   end
 
 end
