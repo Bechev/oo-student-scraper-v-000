@@ -38,7 +38,6 @@ describe "Scraper" do
       scraped_student = Scraper.scrape_profile_page(profile_url)
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_joe_hash)
-      binding.pry
     end
 
     it "can handle profile pages without all of the social links" do
@@ -46,6 +45,4 @@ describe "Scraper" do
       scraped_student = Scraper.scrape_profile_page(profile_url)
       expect(scraped_student).to be_a(Hash)
       expect(scraped_student).to match(student_david_hash)
-    end
-  end
-end
+  
