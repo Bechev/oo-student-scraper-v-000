@@ -39,7 +39,8 @@ class Scraper
       else
         student_profile[:blog] = link
       end
-    
+    end
+    binding.pry
   end
 
 end
