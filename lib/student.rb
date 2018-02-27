@@ -5,6 +5,15 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    @name= student_hash[name].value]
+    @location = student_hash[name].value]
+    @twitter = student_hash[twitter].value]
+    @linkedin = student_hash[linkedin].value]
+    @github = student_hash[github].value]
+    @blog = student_hash[blog].value]
+    @profile_quote = student_hash[profile_quote].value]
+    @bio = student_hash[bio].value]
+    @profile_url = student_hash[profile_url].value]
     
   end
 
